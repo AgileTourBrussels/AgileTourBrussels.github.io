@@ -301,13 +301,15 @@
                             <span style="font-weight: bold">EPHEC</span><br />
                             Avenue K. Adenauer, 3<br />
                             1200 Woluwe-St-Lambert
-                    </p> <!--
+                    </p>
                     <div id="map"></div>
                     <script>
                         function initMap() {
-                        var uluru = {lat: 50.8499914, lng: 4.4462766};
+                         //   50.85187,4.442371,15
+                        //var uluru = {lat: 50.8499914, lng: 4.4462766};
+                        var uluru = {lat: 50.8498949, lng: 4.4485103};
                         var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 4,
+                            zoom: 16,
                             center: uluru
                         });
                         var marker = new google.maps.Marker({
@@ -318,7 +320,7 @@
                     </script>
                     <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5aiek8eSqzaDnNI1xJw_5GvSAD3zLjWA&callback=initMap">
-                    </script> -->
+                    </script> 
                 </div>
 
             </div> 
