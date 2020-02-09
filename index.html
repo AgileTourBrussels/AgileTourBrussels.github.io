@@ -135,7 +135,6 @@
         </header><!-- LANDING - BIG PICTURE -->
         <div class="container widget">
             <div class="landing">
-                <!--<div class="bg" style="background-image: url('http://s3-eu-west-1.amazonaws.com/atbru/wp-content/uploads/2016/07/13192648/crowd.jpg')"></div>-->
                 <div class="bg" style="background-image: url('http://www.agiletourbrussels.be/imgs/ATBru_HeadWeb2018.jpg')"></div>
                 <h1><span class="text-fit" style="color:#FFF">Agile Tour Brussels 2020</span></h1>
 
@@ -204,11 +203,53 @@
                 </div>
             </div>
         </div>
+
+        <!-- REGISTRATION -->
+
+        <div id="tile_registration" class="container widget">
+            <br />
+                <!--
+                <h2>Registrations</h2>
+                <p>Grab your ticket now!</p> -->
+                <!-- Place this where you want the widget to appear -->
+                <!--
+                <p class="tito_class">
+                    <tito-widget event="agile-tour-brussels/2018"></tito-widget>
+                </p>
+                <br /><br />
+                -->
+                <h2 id="tile_explore">Venue</h2>
+                <div class="col-md-8">
+                    <p>
+                            <span style="font-weight: bold">Kinepolis Brussels</span><br />
+                            Boulevard du Centenaire/Eeuwfeestlaan 20<br />
+                            1020 Brussel
+                    </p>
+                    <div id="map" style="border-radius: 10px;"></div>
+                    <script>
+                        function initMap() {
+                        var uluru = {lat: 50.8954178, lng: 4.3351955};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 16,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-6qgU7yS3PzM0ADJqV67bqjNIkTNnjYU&callback=initMap">
+                    </script>
+                </div>
+            </div>
+
         <div class="container widget">
-            <h1 id="tile_sponsors">Previous Edition</h1>
+            <h1 id="tile_sponsors">Sponsors</h1>
             <div class="container widget">
                     <br />
-                    <h2>Sponsors</h2>
+                    <!--<h2>Sponsors</h2>-->
                     <h3>ATBru is a non-profit event and can only be organised thanks to our amazing sponsors</h3>
                     <p>Want to help us? Promote your brand in the agile community?</p>
                     <p>
@@ -216,6 +257,7 @@
                         <a href="http://www.agiletourbrussels.be/sponsors/ATBRU2020SponsoringFileV3.pdf" target="_blank" class="btn btn-primary" style="border-radius: 10px;">Become a Sponsor</a>
                     </p>
             </div>
+
             <h2 id="2018_sponsors">2018 Edition Sponsors</h2>
             <!-- RODHIUM SPONSORS -->
             <h3 class="sponsor"><span>Rodhium Conference Sponsors</span></h3>
@@ -294,48 +336,8 @@
             </div>
 
 
+            <!-- old registration placeholder -->
 
-            <!-- REGISTRATION -->
-
-            <div id="tile_registration" class="container widget">
-            <br />
-                <!--
-                <h2>Registrations</h2>
-                <p>Grab your ticket now!</p> -->
-                <!-- Place this where you want the widget to appear -->
-                <!--
-                <p class="tito_class">
-                    <tito-widget event="agile-tour-brussels/2018"></tito-widget>
-                </p>
-                <br /><br />
-                -->
-                <h2 id="tile_explore">Venue</h2>
-                <div class="col-md-8">
-                    <p>
-                            <span style="font-weight: bold">Kinepolis Brussels</span><br />
-                            Boulevard du Centenaire/Eeuwfeestlaan 20<br />
-                            1020 Brussel
-                    </p>
-                    <div id="map" style="border-radius: 10px;"></div>
-                    <script>
-                        function initMap() {
-                        var uluru = {lat: 50.8954178, lng: 4.3351955,17};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 16,
-                            center: uluru
-                        });
-                        var marker = new google.maps.Marker({
-                            position: uluru,
-                            map: map
-                        });
-                        }
-                    </script>
-                    <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-6qgU7yS3PzM0ADJqV67bqjNIkTNnjYU&callback=initMap">
-                    </script>
-                </div>
-
-            </div>
         </div>
         <div class="container widget">
             <h1>Memories</h1>
